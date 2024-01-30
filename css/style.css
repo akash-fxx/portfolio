@@ -304,17 +304,17 @@ ol {
   Header
 -----------------------*/
 .header {
-  position: absolute;zzzzzz 
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   background: transparent;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 9;
-  margin-top: -90px;
+  /* margin-top: -90px; */
 }
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 770px) {
   .header {
     position: absolute;
     left: 0;
@@ -339,6 +339,21 @@ ol {
   }
 }
 
+/* extra added */
+
+@media(max-width: 400px) {
+  .header__logo {
+    padding: 30px 0;
+    margin-top: 10px;
+    transform: scale(0.75) translateX(-50px);
+  }
+
+  
+}
+
+/*  */
+
+
 .header__logo a {
   display: inline-block;
 }
@@ -352,12 +367,14 @@ ol {
   display: inline-block;
   margin-right: 45px;
   margin-top: 30px;
+  
 }
 .header__nav__menu ul li {
   list-style: none;
   display: inline-block;
   margin-right: 45px;
   position: relative;
+  
 }
 .header__nav__menu ul li.active a:after {
   -webkit-transform: scale(1);
@@ -737,6 +754,19 @@ ol {
     padding: 10px 30px 20px;
   }
 }
+
+
+@media (max-width: 767px) and (min-width: 767px){
+  .work__item {
+    margin-top: 200px;
+    margin-bottom: -80px;
+  }
+
+  #showreel-section{
+    margin-top: 300px;
+  }
+}
+
 
 @media (max-width: 483px) {
   .work__item {
@@ -1154,6 +1184,9 @@ ol {
   margin-bottom: 12px;
 }
 
+
+
+
 .breadcrumb__links a {
   font-size: 16px;
   color: #ffffff;
@@ -1176,6 +1209,51 @@ ol {
   font-weight: 300;
   display: inline-block;
 }
+
+/* extra added */
+
+@media (max-width: 400px) {
+
+  .breadcrumb__text h2 {
+    /* color: #ffffff; */
+    font-size: 30px;
+    font-weight: 700;
+    /* margin-bottom: 12px; */
+  }
+  
+
+  .breadcrumb__links a {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 300;
+    display: inline-block;
+    margin-right: 32px;
+    position: relative;
+  }
+  .breadcrumb__links a:after {
+    position: absolute;
+    right: -22px;
+    top: -3px;
+    content: "/";
+    color: #adadad;
+    font-size: 18px;
+  }
+  .breadcrumb__links span {
+    font-size: 13px;
+    color: #adadad;
+    font-weight: 300;
+    display: inline-block;
+  }
+
+  .portfolio__filter li {
+    
+    font-size: 6px;
+    
+  }
+
+}
+
+
 
 /*---------------------
   About
@@ -1239,6 +1317,27 @@ ol {
   .about__pic__item{
     height: 350px;
   }
+
+  .about__text{
+    transform: scale(0.8);
+    margin-top: -100px;
+    margin-bottom: 450px;
+    
+  }
+
+  .slicknav_btn {
+  transform: scale(0.7) translate(0px,9px);
+  }
+ 
+}
+
+@media(min-width:768px) and (max-width: 990px) {
+  
+
+  .slicknav_btn {
+  transform: translate(0px,-90px);
+  }
+ 
 }
 
 
@@ -1246,9 +1345,11 @@ ol {
 
 .about__text .services__item .services__item__icon:after {
   border-color: #281A3E;
+  
 }
 
 .about__text__desc {
+
   margin-top: -10px;
 }
 
@@ -1422,9 +1523,18 @@ ol {
   background: #100028;
 }
 
+/* extra adeed */
+@media (min-width: 994px) {
+  .portfolio {
+    margin-top: -200px;
+  }
+}
+/*  */
+
 .portfolio__filter {
   text-align: center;
   margin-bottom: 40px;
+  
 }
 
 /* @media (max-width: 400px) {
@@ -1537,8 +1647,28 @@ ol {
 @media (max-width: 400px) {
 .portfolio__gallery{
   margin-bottom: 150%;
+  
 }
+/* extra added */
+
+.portfolio__filter li {
+  
+  font-size: 10px;
+
 }
+.portfolio__filter{
+  margin-top: -50px;
+}
+
+.portfolio__item{
+  transform: scale(0.9);
+  margin-bottom: 30px;
+  margin-top: -40px;
+}
+
+}
+
+/*  */
 
 
 .pagination__option {
@@ -2020,11 +2150,14 @@ ol {
     max-width: 1170px;
     margin-top: 80px;
   }
+
+
 }
 /* Medium Device = 1200px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header__nav__menu {
     margin-right: 25px;
+    
   }
 
   .header__nav__menu ul li {
@@ -2166,10 +2299,11 @@ ol {
   }
 
   .slicknav_btn {
-    position: absolute;
+    position: absoluter;
     right: 10px;
     top: 26px;
     background: #00bfe7;
+   
   }
 
   .header .container {
@@ -2187,6 +2321,15 @@ ol {
     margin-top: -7%;
   }
   
+
+}
+
+@media(min-width:1200px){
+  .header{
+    transform: translateY(-80px);
+    
+    
+  }
 
 }
 
@@ -2298,7 +2441,10 @@ ol {
 
   .about__pic {
     margin-bottom: 50px;
+    
   }
+
+  
 
   .about__text {
     padding-left: 0;
@@ -2349,6 +2495,7 @@ ol {
     right: 10px;
     top: 26px;
     background: #00bfe7;
+    
   }
 
   .header .container {
@@ -2736,7 +2883,7 @@ ol {
 
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 766px) {
   /* Hide the hero section for mobile devices */
   .overall-hero{
       display: none;
@@ -2794,3 +2941,12 @@ ol {
   }
   
 }
+
+@media(min-width: 770px) and (max-width:1200px) {
+
+  .hero__text{
+    transform: translateY(80px);
+  }
+  
+}
+
