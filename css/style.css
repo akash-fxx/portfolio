@@ -1196,14 +1196,53 @@ ol {
 
 .about__text {
   padding-left: 30px;
-   
 }
+
+  /* extra added */
+
+  @media(max-width: 575px) {
+    .about__pic__item.about__pic__item--large {
+      height: 750px;
+    }
+    
+    .about__pic__item{
+      height: 500px;
+    }
+  }
+  
+
+  @media(max-width: 540px) {
+    .about__pic__item.about__pic__item--large {
+      height: 730px;
+    }
+    
+    .about__pic__item{
+      height: 450px;
+    }
+  }
+
+   
+
 @media (max-width: 400px) {
   .about__text {
     margin-bottom: 160%;
      
   }
+
 }
+
+@media(max-width: 400px) {
+  .about__pic__item.about__pic__item--large {
+    height: 500px;
+  }
+  
+  .about__pic__item{
+    height: 350px;
+  }
+}
+
+
+
 
 .about__text .services__item .services__item__icon:after {
   border-color: #281A3E;
