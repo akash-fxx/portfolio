@@ -337,6 +337,30 @@ ol {
     padding: 30px 0;
     margin-top: 10px;
   }
+  .portfolio{
+    margin-top: -10%;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  
+  .portfolio{
+    margin-top: -20%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .portfolio{
+    margin-top: -30%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  
+  .portfolio{
+    margin-top: -10%;
+  }
 }
 
 /* extra added */
@@ -1654,7 +1678,7 @@ ol {
 .portfolio__filter li {
   
   font-size: 12px;
-/*   text-transform: uppercase; */
+  /* text-transform: uppercase; */
 
 
 }
@@ -1666,8 +1690,8 @@ ol {
   transform: scale(0.9);
   margin-bottom: 30px;
   margin-top: -40px;
-}
- */
+} */
+
 }
 
 /*  */
