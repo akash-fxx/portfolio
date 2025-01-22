@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Akashfx about section">
+    <meta name="description" content="Akashfx Portfolio section">
     <meta name="keywords" content="akashfx, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Akashfx | About</title>
+    <title>Akashfx | Portfolio</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
@@ -25,6 +25,7 @@
 </head>
 
 <body>
+
     <!-- Page Preloder -->
     <div id="preloder">
         <div class="loader"></div>
@@ -44,8 +45,8 @@
                         <nav class="header__nav__menu mobile-menu">
                             <ul>
                                 <li><a href="./index.html">Home</a></li>
-                                <li class="active"><a href="./about.html">About</a></li>
-                                <li><a href="./portfolio.html">Portfolio</a></li>
+                                <li><a href="./about.html">About</a></li>
+                                <li class="active"><a href="./portfolio.html">Portfolio</a></li>
                                 <li><a href="./services.html">Services</a></li>
                                 <!-- <li><a href="#">Pages</a>
                                     <ul class="dropdown">
@@ -74,15 +75,15 @@
     <!-- Header End -->
 
     <!-- Breadcrumb Begin -->
-    <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
+    <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.png">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>About us</h2>
+                        <h2>Portfolio</h2>
                         <div class="breadcrumb__links">
                             <a href="index.html">Home</a>
-                            <span>About</span>
+                            <span>Portfolio</span>
                         </div>
                     </div>
                 </div>
@@ -91,305 +92,453 @@
     </div>
     <!-- Breadcrumb End -->
 
-    <!-- About Section Begin -->
-    <section class="about spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="about__pic">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="about__pic__item about__pic__item--large set-bg"
-                                    data-setbg="img/about/about-1.jpg"></div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="about__pic__item set-bg" data-setbg="img/about/about-2.jpg"></div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="about__pic__item set-bg" data-setbg="img/about/about-3.jpg"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about__text">
-                        <div class="section-title">
-                            <span>About us</span>
-                            <h2>WHo we are?</h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="services__item">
-                                    <div class="services__item__icon">
-                                        <img src="img/icons/si-4.png" alt="">
-                                    </div>
-                                    <h4>MOTION DESIGNER</h4>
-                                    <p>As a motion designer, I specialize in creating dynamic visual content, including animated logos, kinetic typography, and engaging social media content. I combine creativity with technical expertise in After Effects and other design tools to bring static elements to life through fluid animations and compelling visual storytelling.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="services__item">
-                                    <div class="services__item__icon">
-                                        <img src="img/icons/si-3.png" alt="">
-                                    </div>
-                                    <h4>VIDEO EDITOR</h4>
-                                    <p>I'm a video editor skilled in color grading, masking, sound design, special effects, motion graphics, and documentary-style editing. I focus on delivering polished and engaging final products, paying attention to every detail for a visually and aurally impressive result.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about__text__desc">
-                                <p>Hi, I'm <strong>Akash</strong>. As a skilled <strong>video editor</strong> with <strong>5 years</strong> of experience, I am confident in my ability to bring creative vision and technical expertise to any project. I have a critical eye for detail and a passion for <strong>storytelling</strong>, which allows me to craft compelling videos that engage audiences and deliver impactful messages.
-
-                                    Utilize industry-standard software including <strong>Adobe Premiere Pro</strong>, <strong>After Effects</strong>, and <strong>Blender</strong> to create compelling video content.</p>
-                                                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section End -->
-
-    <!-- Testimonial Section Begin - ->
-    <section class="testimonial spad set-bg" data-setbg="img/testimonial-bg.jpg">
+    <!-- Portfolio Section Begin -->
+    <section class="portfolio spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title center-title">
-                        <span>Loved By Clients</span>
-                        <h2>What clients say?</h2>
-                    </div>
+                    <ul class="portfolio__filter">
+                        <li class="active" data-filter="*" style="color: white;">All</li>
+                        <li data-filter=".motion">Motion Design</li>
+                        <li data-filter=".meta">Meta Ads</li>
+                        <li data-filter=".animation">3D Animation</li>
+                        <li data-filter=".teaser">Teaser/Montage</li>
+                        <li data-filter=".personal">Personal Projects</li>
+                    </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="testimonial__slider owl-carousel">
-                    <div class="col-lg-4">
-                        <div class="testimonial__item">
-                            <div class="testimonial__text">
-                                <p>Delivers such a great service that it can benefit all kinds of people from any number
-                                    of industries.</p>
-                            </div>
-                            <div class="testimonial__author">
-                                <div class="testimonial__author__pic">
-                                    <img src="img/testimonial/ta-1.jpg" alt="">
-                                </div>
-                                <div class="testimonial__author__text">
-                                    <h5>Krista Attorn</h5>
-                                    <span>Web Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial__item">
-                            <div class="testimonial__text">
-                                <p>Videographer delivers such a great service that it can benefit all kinds of people
-                                    from any number.</p>
-                            </div>
-                            <div class="testimonial__author">
-                                <div class="testimonial__author__pic">
-                                    <img src="img/testimonial/ta-2.jpg" alt="">
-                                </div>
-                                <div class="testimonial__author__text">
-                                    <h5>Krista Attorn</h5>
-                                    <span>Web Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial__item">
-                            <div class="testimonial__text">
-                                <p>Videographer delivers such a great service that it can benefit all kinds of people
-                                    from any number.</p>
-                            </div>
-                            <div class="testimonial__author">
-                                <div class="testimonial__author__pic">
-                                    <img src="img/testimonial/ta-3.jpg" alt="">
-                                </div>
-                                <div class="testimonial__author__text">
-                                    <h5>Krista Attorn</h5>
-                                    <span>Web Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial__item">
-                            <div class="testimonial__text">
-                                <p>Delivers such a great service that it can benefit all kinds of people from any number
-                                    of industries.</p>
-                            </div>
-                            <div class="testimonial__author">
-                                <div class="testimonial__author__pic">
-                                    <img src="img/testimonial/ta-1.jpg" alt="">
-                                </div>
-                                <div class="testimonial__author__text">
-                                    <h5>Krista Attorn</h5>
-                                    <span>Web Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial__item">
-                            <div class="testimonial__text">
-                                <p>Videographer delivers such a great service that it can benefit all kinds of people
-                                    from any number.</p>
-                            </div>
-                            <div class="testimonial__author">
-                                <div class="testimonial__author__pic">
-                                    <img src="img/testimonial/ta-2.jpg" alt="">
-                                </div>
-                                <div class="testimonial__author__text">
-                                    <h5>Krista Attorn</h5>
-                                    <span>Web Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!- - Testimonial Section End -->
+        
+            <div class="row portfolio__gallery">
+                <!-- Motion Design -->
+                
 
-    <!-- Counter Section Begin - ->
-    <section class="counter">
-        <div class="container">
-            <div class="counter__content">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-1.png" alt="">
-                                <h2 class="counter_num">50</h2>
-                                <p>Compled Projects</p>
-                            </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix motion">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/motion/motion-1.jpg">
+                            <a href="https://www.youtube.com/watch?v=LT896_-kyh0" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Motion Design #1</h4>
+                            <span>Motion Design</span>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item second__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-2.png" alt="">
-                                <h2 class="counter_num">1068</h2>
-                                <p>Happy clients</p>
-                            </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix meta">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/ads/ad-1.jpg">
+                            <a href="https://www.youtube.com/watch?v=p4ilKT9-n5M" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Meta Ad #1</h4>
+                            <span>Meta Ads</span>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item third__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-3.png" alt="">
-                                <h2 class="counter_num">230</h2>
-                                <p>Perspective clients</p>
-                            </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix motion">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/motion/motion-2.jpg">
+                            <a href="https://www.youtube.com/watch?v=UnB5dJqj8OQ" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Motion Design #2</h4>
+                            <span>Motion Design</span>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item four__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-4.png" alt="">
-                                <h2 class="counter_num">230</h2>
-                                <p>Compled Projects</p>
-                            </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mix motion">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/motion/motion-3.jpg">
+                            <a href="https://www.youtube.com/watch?v=xomwbSABVVA&t=4s" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Motion Design #3</h4>
+                            <span>Motion Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-sm-6 mix motion">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/motion/motion-4.jpg">
+                            <a href="https://www.youtube.com/watch?v=WStC5V8qidU" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Motion Design #4</h4>
+                            <span>Motion Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix animation">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/blender/3D-milestone-1.png">
+                            <a href="https://www.youtube.com/watch?v=n36dp2P4I10" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>3D Animation Story #1</h4>
+                            <span>3D Animation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix motion">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/motion/motion-5.jpg">
+                            <a href="https://www.youtube.com/watch?v=TJ3jOm--6MM" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Motion Design #5</h4>
+                            <span>Motion Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mix motion">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/motion/motion-6.jpg">
+                            <a href="https://www.youtube.com/watch?v=gxjqjVQgyoc" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Motion Design #6</h4>
+                            <span>Motion Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix meta">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/ads/ad-2.jpg">
+                            <a href="https://www.youtube.com/watch?v=d7UpVV_0XHU" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Meta Ad #2</h4>
+                            <span>Meta Ads</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix motion">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/youtube/mg1.jpg">
+                            <a href="https://www.youtube.com/watch?v=0Ir2JOSSMNo" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Motion Design #7</h4>
+                            <span>Motion Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mix motion">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/ads/web.png">
+                            <a href="https://www.youtube.com/watch?v=uXnteEFD9fI" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>motion design #8</h4>
+                            <span>Motion Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Meta Ads -->
+                <!-- <div class="col-lg-4 col-md-6 col-sm-6 mix meta">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/ads/ad-1.jpg">
+                            <a href="https://www.youtube.com/watch?v=p4ilKT9-n5M" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Meta Ad #1</h4>
+                            <span>Meta Ads</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mix meta">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/ads/ad-3.jpg">
+                            <a href="https://www.youtube.com/watch?v=4EhoHXjaIy8" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Meta Ad #3</h4>
+                            <span>Meta Ads</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix personal">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/vfxEg/Eg-1.png">
+                            <a href="https://www.youtube.com/watch?v=wkMmR6jHNRc" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Event Glimpse #1</h4>
+                            <span>Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix meta">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/ads/ad-4.jpg">
+                            <a href="https://www.youtube.com/watch?v=ZHvsVvfPyrc" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Meta Ad #4</h4>
+                            <span>Meta Ads</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Animation -->
+                
+                <div class="col-lg-4 col-md-6 col-sm-6 mix animation">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/blender/3D-trend-1.png">
+                            <a href="https://www.youtube.com/watch?v=JXikz6XcG14" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>3D Animation Trending #1</h4>
+                            <span>3D Animation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix motion">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/reels/brand-1.jpg">
+                            <a href="https://www.youtube.com/watch?v=BY7BPy3R6Hs" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Branding Reels #1</h4>
+                            <span>Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+               
+
+                <!-- Teaser/Montage -->
+                <div class="col-lg-4 col-md-6 col-sm-6 mix teaser">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/youtube/game-1.png">
+                            <a href="https://www.youtube.com/watch?v=cmiDbD2qHFw" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Gaming Edits #1</h4>
+                            <span>Teaser/Montage</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix personal">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/youtube/d-1.jpg">
+                            <a href="https://www.youtube.com/watch?v=ZOW8ZwHpl5k" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Event Program Edit #2</h4>
+                            <span>Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix teaser">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/ads/eventp-2.png">
+                            <a href="https://www.youtube.com/watch?v=mKXDtINKd_k" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Event Promotion #2</h4>
+                            <span>Teaser/Montage</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix animation">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/blender/3d-bday-1.png">
+                            <a href="https://www.youtube.com/watch?v=zUCDT1iLS8Y" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>3D Animation Birthday #1</h4>
+                            <span>3D Animation</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Personal Projects -->
+                <!-- <div class="col-lg-4 col-md-6 col-sm-6 mix personal">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/youtube/d-1.jpg">
+                            <a href="https://www.youtube.com/watch?v=ZOW8ZwHpl5k" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Event Program Edit #2</h4>
+                            <span>Personal Project</span>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mix personal">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/vfxEg/vfx-6.png">
+                            <a href="https://www.youtube.com/watch?v=Sk85vQqCKqM" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>VFX Edit #2</h4>
+                            <span>Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix teaser">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/ads/eventp-1.png">
+                            <a href="https://www.youtube.com/watch?v=ry72IPU9FiY" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Event Promotion #1</h4>
+                            <span>Teaser/Montage</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mix personal">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/vfxEg/vfx-8.png">
+                            <a href="https://www.youtube.com/watch?v=H64Fj4Xpd2w" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>VFX Edit #3</h4>
+                            <span>Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mix personal">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/reels/vfx-5.jpg">
+                            <a href="https://www.youtube.com/watch?v=UYYfwOjkOdA" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>VFX Edit #6</h4>
+                            <span>Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mix personal">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/reels/trend-9.jpg">
+                            <a href="https://www.youtube.com/watch?v=mvjKRXszeik" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Trending Style Edit #8</h4>
+                            <span>Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mix personal">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/vfxEg/Eg-2.png">
+                            <a href="https://www.youtube.com/watch?v=V_AtLQfWfLc" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Event Glimpse #2</h4>
+                            <span>Personal Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6 mix personal">
+                    <div class="portfolio__item">
+                        <div class="portfolio__item__video set-bg" data-setbg="img/portfolioo/vfxEg/Eg-3.png">
+                            <a href="https://www.youtube.com/watch?v=BZMVlkfEoRE" class="play-btn video-popup">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="portfolio__item__text">
+                            <h4>Event Glimpse #3</h4>
+                            <span>Personal Project</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!- - Counter Section End -->
-
-    <!-- Team Section Begin - ->
-    <section class="team spad set-bg" data-setbg="img/team-bg.jpg">
-        <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-title team__title">
-                        <span>Nice to meet</span>
-                        <h2>OUR Team</h2>
+                    <div class="pagination__option">
+                        <a href="#" class="arrow__pagination left__arrow"><span class="arrow_left"></span> Prev</a>
+                        <a href="#" class="number__pagination">1</a>
+                        <a href="#" class="number__pagination">2</a>
+                        <a href="#" class="arrow__pagination right__arrow">Next <span class="arrow_right"></span></a>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item set-bg" data-setbg="img/team/team-1.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--second set-bg" data-setbg="img/team/team-2.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--third set-bg" data-setbg="img/team/team-3.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--four set-bg" data-setbg="img/team/team-4.jpg">
-                        <div class="team__item__text">
-                            <h4>AMANDA STONE</h4>
-                            <p>Videographer</p>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 p-0">
-                    <div class="team__btn">
-                        <a href="#" class="primary-btn">Meet Our Team</a>
-                    </div>
-                </div>
-            </div>
+            </div> -->
         </div>
     </section>
-    <!- - Team Section End -->
+    <!-- Portfolio Section End -->
 
-    <!-- Footer Section Begin -->
-    <footer class="footer">
+     <!-- Footer Section Begin -->
+     <footer class="footer">
         <div class="container">
             <div class="footer__top">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="footer__top__logo">
-                            <a href="#"><img src="img/logo-1.png" alt=""></a>
+                            <a href="index.html"><img src="img/logo-1.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -412,7 +561,19 @@
                             <a href="about.html" class="read__more">Read more <span class="arrow_right"></span></a>
                         </div>
                     </div>
-             
+                <!--
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Who we are</h5>
+                            <ul>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Carrers</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Locations</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                -->
                     <div class="col-lg-2 col-md-3 col-sm-3">
                         <div class="footer__option__item">
                             <h5>Our work</h5>
@@ -424,7 +585,18 @@
                             </ul>
                         </div>
                     </div>
-             
+                <!--
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__option__item">
+                            <h5>Newsletter</h5>
+                            <p>Videoprah is an award-winning, full-service production company specializing.</p>
+                            <form action="about.html">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                -->
                 </div>
             </div>
             <div class="footer__copyright">
