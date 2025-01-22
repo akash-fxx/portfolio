@@ -683,8 +683,27 @@ ol {
   height: 411px !important;
 }
 
+/* First, remove all duplicate verticalWiggle animations and their related code */
+
+/* Add this new animation for the play button */
+@keyframes playButtonPulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Target the play button in work section */
 .work__item .play-btn {
-  display: block;
+  display: block;  /* Change back to block from inline-block */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -697,6 +716,11 @@ ol {
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 50%;
+  /* Remove animation and transition properties */
+}
+
+.work__item .play-btn:hover {
+  /* Remove these styles */
 }
 
 .grid-sizer {
@@ -2974,5 +2998,413 @@ ol {
     transform: translateY(80px);
   }
   
+}
+
+@media only screen and (min-width: 770px) {
+  .work {
+    margin-top: 150px; /* Add spacing above showreel section for larger screens */
+  }
+}
+
+/* Keep existing mobile styles */
+@media only screen and (max-width: 766px) {
+  .overall-hero {
+    display: none;
+  }
+
+  .work {
+    margin-top: -100px;
+  }
+}
+
+/* Add this new section for the portfolio button */
+.portfolio-btn-container {
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 0px; /* Reduced from 30px */
+  margin-bottom: 150px; /* Added more bottom margin */
+  position: relative; /* Add this */
+  z-index: 1; /* Add this to ensure button stays above other content */
+}
+
+.portfolio-btn {
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  padding: 14px 32px 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-btn:hover:before {
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-btn:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-btn:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 30px;
+  width: 30px;
+  border-left: 2px solid #00bfe7;
+  border-top: 2px solid #00bfe7;
+  content: "";
+  z-index: -1;
+  -webkit-transition: all, 0.7s;
+  -o-transition: all, 0.7s;
+  transition: all, 0.7s;
+}
+
+.portfolio-btn:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  width: 30px;
+  border-right: 2px solid #00bfe7;
+  border-bottom: 2px solid #00bfe7;
+  content: "";
+  z-index: -1;
+  -webkit-transition: all, 0.7s;
+  -o-transition: all, 0.7s;
+  transition: all, 0.7s;
+}
+
+/* Add responsive styles for the portfolio button */
+@media only screen and (max-width: 767px) {
+  .portfolio-btn-container {
+    padding: 20px 0;
+    margin-top: 0px; /* Reduced from 15px */
+    margin-bottom: 40px; /* Added more bottom margin */
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .portfolio-btn-container {
+    transform: scale(0.8);
+    margin-top: -60px; /* Reduced from -40px */
+    margin-bottom: 80px; /* Increased from 40px */
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .portfolio-btn-container {
+    display: none; /* Hide the button container below 769px */
+  }
+}
+
+/* Add this new animation for the portfolio button */
+@media only screen and (min-width: 770px) {
+  .portfolio-btn-container {
+    animation: wiggle 3s ease-in-out infinite;
+    transform-origin: center;
+  }
+
+  /* Adjust the wiggle animation for larger screens */
+  @keyframes wiggle {
+    0%, 100% {
+      transform: translateX(0) scale(1);
+    }
+    2% {
+      transform: translateX(-5px) scale(1);
+    }
+    10% {
+      transform: translateX(5px) scale(1);
+    }
+    20% {
+      transform: translateX(-5px) scale(1);
+    }
+    30% {
+      transform: translateX(0) scale(1);
+    }
+  }
+}
+
+/* Keep existing mobile styles */
+@media only screen and (max-width: 769px) {
+  .portfolio-btn-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .portfolio-btn-container {
+    transform: scale(0.8);
+    margin-top: -60px;
+    margin-bottom: 80px;
+  }
+}
+
+/* Add this new keyframes animation for vertical wiggle */
+@keyframes verticalWiggle {
+  0%, 100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(-6px);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* Add this new class for the portfolio header */
+.portfolio__header {
+  animation: verticalWiggle 3s ease-in-out infinite;
+}
+
+/* Adjust animation for mobile screens */
+@media only screen and (max-width: 767px) {
+  .portfolio__header {
+    animation: verticalWiggle 3s ease-in-out infinite;
+    transform-origin: center;
+  }
+}
+
+/* Add this new keyframes animation for vertical wiggle */
+@keyframes verticalWiggle {
+  0%, 100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(-6px);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+/* Target the portfolio link specifically in the navigation menu */
+.header__nav__menu ul li a[href="./portfolio.html"],
+.header__nav__menu ul li a[href="portfolio.html"] {
+  display: inline-block;
+  animation: verticalWiggle 2.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  position: relative;
+}
+
+/* Disable animation when menu is collapsed */
+@media only screen and (max-width: 991px) {
+  .header__nav__menu ul li a[href="./portfolio.html"],
+  .header__nav__menu ul li a[href="portfolio.html"] {
+    animation: none;
+  }
+}
+
+/* Update the keyframes animation for rubber band effect */
+@keyframes verticalWiggle {
+  0% {
+    transform: scaleY(1);
+  }
+  30% {
+    transform: scaleY(1.25);
+  }
+  40% {
+    transform: scaleY(0.75);
+  }
+  50% {
+    transform: scaleY(1.15);
+  }
+  65% {
+    transform: scaleY(0.85);
+  }
+  75% {
+    transform: scaleY(1.05);
+  }
+  85% {
+    transform: scaleY(0.95);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+/* Target the portfolio link specifically in the navigation menu */
+.header__nav__menu ul li a[href="./portfolio.html"],
+.header__nav__menu ul li a[href="portfolio.html"] {
+  display: inline-block;
+  animation: verticalWiggle 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  transform-origin: center;
+  position: relative;
+}
+
+/* Disable animation when menu is collapsed */
+@media only screen and (max-width: 991px) {
+  .header__nav__menu ul li a[href="./portfolio.html"],
+  .header__nav__menu ul li a[href="portfolio.html"] {
+    animation: none;
+  }
+}
+
+/* Add this single position-only animation at the end of the file */
+@keyframes verticalWiggle {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-8px);
+  }
+  40% {
+    transform: translateY(6px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  65% {
+    transform: translateY(3px);
+  }
+  75% {
+    transform: translateY(-2px);
+  }
+  85% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Target the portfolio link specifically in the navigation menu */
+.header__nav__menu ul li a[href="./portfolio.html"],
+.header__nav__menu ul li a[href="portfolio.html"] {
+  display: inline-block;
+  animation: verticalWiggle 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  position: relative;
+}
+
+/* Disable animation when menu is collapsed */
+@media only screen and (max-width: 991px) {
+  .header__nav__menu ul li a[href="./portfolio.html"],
+  .header__nav__menu ul li a[href="portfolio.html"] {
+    animation: none;
+  }
+}
+
+/* Remove all existing verticalWiggle animations and replace with this one */
+@keyframes verticalWiggle {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(12px);
+  }
+  35% {
+    transform: translateY(-6px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  65% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Target the portfolio link specifically in the navigation menu */
+.header__nav__menu ul li a[href="./portfolio.html"],
+.header__nav__menu ul li a[href="portfolio.html"] {
+  display: inline-block;
+  animation: verticalWiggle 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  position: relative;
+}
+
+/* Disable animation when menu is collapsed */
+@media only screen and (max-width: 991px) {
+  .header__nav__menu ul li a[href="./portfolio.html"],
+  .header__nav__menu ul li a[href="portfolio.html"] {
+    animation: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .work__item {
+    height: 311px !important;
+    float: left;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Reduce the scale and adjust translation for larger screens */
+    transform: translate(45%, 10%) scale(1.4); /* Changed from 1.9 to 1.4 */
+    margin-top: 40px; /* Reduced from 80px */
+    margin-bottom: 25px; /* Reduced from 50px */
+    transition: transform 0.5s ease;
+  }
+
+  /* Adjust the work gallery container spacing */
+  .work__gallery {
+    transform: scale(0.8);
+    margin-right: -10px;
+    margin-bottom: 100px; /* Reduced from 200px */
+  }
+
+  /* Adjust the overall work section spacing */
+  .work {
+    margin-top: 150px; /* Reduced from 150px */
+  }
+}
+
+/* Keep existing media queries and other styles */
+
+/* Update the portfolio button container positioning */
+@media only screen and (min-width: 770px) {
+  .portfolio-btn-container {
+    margin-top: 40px; /* Move button up relative to the showreel section */
+    margin-bottom: 200px; /* Increase bottom margin for better spacing */
+    animation: wiggle 3s ease-in-out infinite;
+    transform-origin: center;
+  }
+}
+
+/* Keep existing mobile styles */
+@media only screen and (max-width: 769px) {
+  .portfolio-btn-container {
+    display: none;
+  }
+}
+
+/* Keep existing small screen styles */
+@media only screen and (max-width: 400px) {
+  .portfolio-btn-container {
+    transform: scale(0.8);
+    margin-top: -60px;
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1600px) {
+  .work {
+    margin-top: 50px; /* Reduced margin for this screen range */
+  }
+
+  .work__item {
+    transform: translate(45%, -15%) scale(1.4); /* Adjusted translation */
+    margin-top: 40px;
+    margin-bottom: -180px;
+  }
+
+  .work__gallery {
+    transform: scale(0.8);
+    margin-bottom: 100px;
+  }
+}
+
+/* Keep existing media queries */
+@media only screen and (min-width: 770px) {
+  .work {
+    margin-top: 150px; /* This will apply for screens larger than 1600px */
+  }
 }
 
